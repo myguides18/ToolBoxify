@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ToolBoxify Blog - Tips, guides, and comparisons for image compression, PDF tools, and format conversion.">
+  <title>Blog - ToolBoxify</title>
+  <style>
+    :root {
+      --bg: #0d0d0d;
+      --panel: #1a1a1a;
+      --border: #333;
+      --text: #f6f7fb;
+      --muted: #a1a1aa;
+      --purple: #7c3aed;
+      --purple-2: #a855f7;
+      --radius: 8px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: radial-gradient(circle at 18% 0%, rgba(124,58,237,.2), transparent 30%),
+                  linear-gradient(180deg, #111 0%, var(--bg) 42%, #080808 100%);
+      color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    a { color: inherit; text-decoration: none; }
+    .page { width: min(880px, calc(100% - 32px)); margin: 0 auto; }
+
+    .site-header { padding: 34px 0 20px; border-bottom: 1px solid rgba(255,255,255,.08); margin-bottom: 40px; }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .brand-mark { display: grid; width: 44px; height: 44px; place-items: center; border-radius: var(--radius); background: linear-gradient(135deg, var(--purple), var(--purple-2)); font-size: 25px; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--purple-2); font-size: 14px; margin-bottom: 24px; }
+    .back-link:hover { text-decoration: underline; }
+
+    .page-title { font-size: clamp(28px, 5vw, 42px); margin-bottom: 8px; }
+    .page-subtitle { color: var(--muted); font-size: 16px; margin-bottom: 40px; }
+
+    .post-list { display: flex; flex-direction: column; gap: 16px; }
+    .post-card {
+      display: block;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      transition: border-color .2s, transform .2s;
+    }
+    .post-card:hover { border-color: var(--purple-2); transform: translateY(-2px); }
+    .post-card h2 { font-size: 20px; margin-bottom: 6px; color: var(--text); }
+    .post-card .desc { color: var(--muted); font-size: 14px; line-height: 1.5; }
+
+    footer { text-align: center; padding: 48px 0 32px; color: var(--muted); font-size: 13px; border-top: 1px solid rgba(255,255,255,.06); margin-top: 60px; }
+
+    @media (max-width: 600px) {
+      .post-card { padding: 18px; }
+      .post-card h2 { font-size: 17px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="page">
+      <div class="brand">
+        <div class="brand-mark">🧰</div>
+        <div>
+          <h1 style="font-size:24px; font-weight:700;">ToolBoxify Blog</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="page">
+    <a href="/ToolBoxify/" class="back-link">← Back to Tools</a>
+    <h2 class="page-title">Tips, Guides &amp; Comparisons</h2>
+    <p class="page-subtitle">Learn how to get the most out of your images, PDFs, and file formats—all processed locally in your browser.</p>
+
+    <div class="post-list">
+      <a class="post-card" href="/ToolBoxify/blog/best-free-image-compressor.html">
+        <h2>Best Free Image Compressor Tools in 2026 (No Upload Required)</h2>
+        <p class="desc">Compare the top browser-based image compressors that keep your files private. Find the fastest, highest-quality free tools.</p>
+      </a>
+      <a class="post-card" href="/ToolBoxify/blog/how-to-merge-pdf-files-free.html">
+        <h2>How to Merge PDF Files Online for Free — No Sign Up Needed</h2>
+        <p class="desc">Step-by-step guide to combining multiple PDFs into one file in seconds, without creating an account or uploading to a server.</p>
+      </a>
+      <a class="post-card" href="/ToolBoxify/blog/png-vs-jpeg-vs-webp.html">
+        <h2>PNG vs JPEG vs WEBP: Which Image Format Should You Use in 2026?</h2>
+        <p class="desc">A clear breakdown of the three major image formats—when to use each one for web, print, and social media.</p>
+      </a>
+      <a class="post-card" href="/ToolBoxify/blog/how-to-convert-images-online.html">
+        <h2>How to Convert Images Online Without Losing Quality</h2>
+        <p class="desc">Learn the right way to convert between PNG, JPEG, and WEBP while preserving maximum image quality.</p>
+      </a>
+      <a class="post-card" href="/ToolBoxify/blog/browser-tools-vs-desktop-software.html">
+        <h2>5 Reasons to Switch from Desktop Software to Browser-Based Tools</h2>
+        <p class="desc">Why more professionals are ditching bloated desktop apps for fast, privacy-first browser tools.</p>
+      </a>
+      <a class="post-card" href="/ToolBoxify/blog/free-online-pdf-tools-guide.html">
+        <h2>The Complete Guide to Free Online PDF Tools in 2026</h2>
+        <p class="desc">Everything you need to merge, split, and manage PDFs for free—no downloads, no uploads, no hassle.</p>
+      </a>
+    </div>
+  </div>
+
+  <footer>&copy; 2026 ToolBoxify</footer>
+</body>
+</html>

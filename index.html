@@ -122,6 +122,26 @@
       font-size: 14px;
     }
 
+    .blog-link {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 13px;
+      border: 1px solid rgba(168, 85, 247, .35);
+      border-radius: 999px;
+      color: #ddd6fe;
+      background: rgba(124, 58, 237, .08);
+      white-space: nowrap;
+      font-size: 14px;
+      text-decoration: none;
+      transition: background .2s, border-color .2s;
+    }
+
+    .blog-link:hover {
+      background: rgba(124, 58, 237, .18);
+      border-color: rgba(168, 85, 247, .6);
+    }
+
     .ad {
       display: grid;
       place-items: center;
@@ -605,6 +625,10 @@
         width: fit-content;
       }
 
+      .blog-link {
+        width: fit-content;
+      }
+
       .trust-row {
         grid-template-columns: 1fr;
       }
@@ -662,6 +686,7 @@
             <p class="slogan">Free Online Tools. No Upload. All Local.</p>
           </div>
         </div>
+        <a href="/ToolBoxify/blog/" class="blog-link">📝 Blog</a>
         <div class="privacy-pill" title="Files stay in this browser session">🔒 Local-only processing</div>
       </div>
       <!-- AdSense -->

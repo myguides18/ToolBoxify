@@ -673,6 +673,68 @@
         gap: 14px;
       }
     }
+
+    /* Latest Guides */
+    .latest-guides {
+      padding: 48px 0 30px;
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
+    .latest-guides h2 {
+      margin-bottom: 24px;
+      font-size: 24px;
+    }
+    .guides-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .guide-card {
+      display: block;
+      padding: 20px 22px;
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: var(--radius);
+      background: rgba(26,26,26,.8);
+      color: #e4e4e7;
+      text-decoration: none;
+      transition: border-color .2s, background .2s, transform .2s;
+    }
+    .guide-card:hover {
+      border-color: var(--purple-2);
+      background: rgba(124,58,237,.08);
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+    .guide-card h4 {
+      margin: 0 0 6px;
+      font-size: 16px;
+      color: #f6f7fb;
+    }
+    .guide-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .view-all {
+      display: inline-block;
+      margin-top: 20px;
+      color: var(--purple-2);
+      font-weight: 650;
+      text-decoration: none;
+      font-size: 15px;
+      transition: color .2s;
+    }
+    .view-all:hover {
+      color: #c084fc;
+    }
+    @media (max-width: 600px) {
+      .guides-grid {
+        grid-template-columns: 1fr;
+      }
+      .latest-guides {
+        padding: 36px 0 24px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -840,6 +902,32 @@
       <aside class="ad ad-side">AdSense 160×600</aside>
     </div>
   </div>
+
+  <!-- Latest Guides -->
+  <section class="latest-guides">
+    <div class="page">
+      <h2>Latest Guides</h2>
+      <div class="guides-grid">
+        <a href="/ToolBoxify/blog/best-free-image-compressor.html" class="guide-card">
+          <h4>Best Free Image Compressor Tools in 2026 (No Upload Required)</h4>
+          <p>Discover the best free image compressor tools that work entirely in your browser — no upload required.</p>
+        </a>
+        <a href="/ToolBoxify/blog/how-to-merge-pdf-files-free.html" class="guide-card">
+          <h4>How to Merge PDF Files Online for Free — No Sign Up Needed</h4>
+          <p>Step-by-step guide to combining PDFs securely in your browser, with zero account creation.</p>
+        </a>
+        <a href="/ToolBoxify/blog/png-vs-jpeg-vs-webp.html" class="guide-card">
+          <h4>PNG vs JPEG vs WEBP: Which Image Format Should You Use in 2026?</h4>
+          <p>A comprehensive comparison of image formats to help you pick the right one every time.</p>
+        </a>
+        <a href="/ToolBoxify/blog/browser-tools-vs-desktop-software.html" class="guide-card">
+          <h4>5 Reasons to Switch from Desktop Software to Browser-Based Tools</h4>
+          <p>Why browser-based tools are faster, safer, and cheaper than traditional desktop software.</p>
+        </a>
+      </div>
+      <a href="/ToolBoxify/blog/" class="view-all">View All Articles →</a>
+    </div>
+  </section>
 
   <footer class="site-footer">
     <div class="page">© 2026 ToolBoxify</div>

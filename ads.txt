@@ -1,0 +1,3 @@
+# Replace pub-0000000000000000 with your real Google AdSense publisher ID before final ad verification.
+# Example format:
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0

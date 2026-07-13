@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /ToolBoxify/
+Sitemap: https://myguides18.github.io/ToolBoxify/sitemap.xml

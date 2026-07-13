@@ -34,51 +34,48 @@
 <div class="wrap">
 <h1>How to Split a PDF into Individual Pages — Free &amp; Secure</h1>
 
-<p>Sometimes you only need one page out of a 200-page report, or you want to send each chapter of a contract as its own file. Learning how to split a PDF into individual pages saves you from emailing giant attachments or asking colleagues to "just scroll to page 14." This guide covers the fastest, most private way to do it in 2026.</p>
+<p>Three weeks ago my accountant asked me to send "just the January through March statements" from a year-end bank PDF that was 87 pages long. The file was 32 MB. I wasn't about to email the entire thing and ask him to scroll. I also wasn't going to install a PDF editor for a task I'd do maybe three times a year. A browser-based splitter handled it in under 30 seconds: pages 1–31 extracted, downloaded as a ZIP of individual PDFs, each file named by page number. Done.</p>
 
-<h2>When Splitting a PDF Makes Sense</h2>
+<p>Splitting PDFs is one of those tasks that feels niche until you need to do it — and then you realize how often the need comes up. Here's everything I've figured out about doing it fast, securely, and without accidentally sending the wrong pages.</p>
+
+<h2>Real Situations Where Splitting Saves the Day</h2>
+
+<p>Over the past year I've used PDF splitting for:</p>
 <ul>
-  <li>Extracting a single invoice from a yearly statement bundle.</li>
-  <li>Sending one chapter of an ebook to a reviewer.</li>
-  <li>Breaking a training manual into per-module handouts.</li>
-  <li>Isolating a signed page from a multi-page agreement.</li>
+  <li>Extracting a single signed page from a 40-page contract to send to a notary — they only needed the signature page, not the whole agreement.</li>
+  <li>Breaking a training manual into per-module files so each team member got exactly the section relevant to their role (sales got pages 1–18, engineering got 19–45, compliance got 46–72).</li>
+  <li>Separating monthly bank statements from an annual bundle — 12 files from one, each filed in the correct month folder.</li>
+  <li>Isolating an invoice from a 200-page vendor payment history PDF when the accounting system demanded a single-invoice upload.</li>
+  <li>Splitting a scanned book into chapters so I could read one per sitting without scrolling through 400 pages on a tablet.</li>
 </ul>
 
-<h2>Why "Secure" Matters for PDFs</h2>
-<p>PDFs are full of sensitive data — tax forms, contracts, medical letters. Uploading them to an unknown server means trusting a stranger with that content. A browser-based splitter processes the file locally on your device, so the document never leaves your computer. That is the model <a href="https://myguides18.github.io/ToolBoxify/">ToolBoxify uses for all its PDF tools</a>, including the page splitter.</p>
+<p>The pattern is always the same: you have too much PDF, and the person on the other end only needs a slice of it.</p>
 
-<h2>Step-by-Step: Split a PDF Into Single Pages</h2>
-<ol>
-  <li>Open a local PDF splitter in your browser.</li>
-  <li>Drop in your PDF (no upload to a server).</li>
-  <li>Choose "extract every page" or specify a range like <code>3-7</code>.</li>
-  <li>Click split and download the resulting files as a ZIP.</li>
-  <li>Verify page count matches your selection.</li>
-</ol>
+<h2>The Two Splitting Modes You Actually Need</h2>
 
-<h3>Splitting by Page Range vs. Every Page</h3>
-<p>If you only need pages 10–15, extract that range to avoid creating 200 tiny files. If you are archiving, "split all" gives you one file per page, perfectly named and ordered.</p>
+<p><strong>Extract by range.</strong> "Give me pages 14–27." This is the one I use most. You specify start and end pages, the tool extracts exactly that range as a single new PDF (or one PDF per page if you prefer). The page numbers in the tool correspond to the PDF's internal page numbering, which may not match the printed page numbers if there's a cover page or Roman-numeral front matter. Always preview before splitting.</p>
 
-<h2>What If the File Is Too Big to Email After Splitting?</h2>
-<p>Individual pages are smaller, but a 100-page deck can still be heavy. After splitting, you can <a href="https://myguides18.github.io/ToolBoxify/">reduce the PDF file size</a> on the same toolset before sharing — no extra sign-up required.</p>
+<p><strong>Split all pages.</strong> "Give me every page as its own file." Useful for archiving (each page gets a clean filename like page_001.pdf, page_002.pdf), for uploading individual pages to systems that expect single-document inputs, or for reorganizing a document by splitting it into pieces and then merging them back in a different order.</p>
 
-<h2>Common Pitfalls</h2>
-<ul>
-  <li>Encrypted PDFs: you must unlock them first (enter the password in the tool).</li>
-  <li>Scanned PDFs: splitting works, but the pages stay images — no text becomes selectable.</li>
-  <li>Page numbering: on-screen page 1 may be document page 3 if there is a cover; always preview.</li>
-</ul>
+<p><a href="https://myguides18.github.io/ToolBoxify/">ToolBoxify's PDF splitter</a> handles both modes and processes the file entirely in your browser — the PDF never leaves your device. It outputs a ZIP for multi-page splits so you get one download, not 87.</p>
 
-<h2>Free vs. Paid Splitters</h2>
-<p>Most paid desktop apps charge a subscription you will use twice a year. A free, browser-based splitter covers 95% of real needs: single pages, ranges, and small batches. Reach for paid software only if you process thousands of PDFs daily and need automation.</p>
+<h2>Three Things That Trip People Up</h2>
 
-<h2>A 30-Second Workflow</h2>
-<ol>
-  <li>Drag your PDF into <a href="https://myguides18.github.io/ToolBoxify/">ToolBoxify</a>.</li>
-  <li>Pick the pages or range.</li>
-  <li>Download the split files.</li>
-  <li>Done — no install, no account, no upload.</li>
-</ol>
+<p><strong>Encrypted PDFs.</strong> If the file has a password, you need to unlock it before splitting. Most splitters have an option to enter the password — the unlocking also happens locally, so the password isn't transmitted anywhere. If you don't know the password, you're stuck; there's no workaround.</p>
+
+<p><strong>Scanned PDFs.</strong> Splitting works fine — each page splits cleanly. But the pages stay as images, not selectable text. If you need the output to be text-searchable, you'd need to run OCR on the original PDF first. That's a separate tool, not part of the split workflow.</p>
+
+<p><strong>Page number confusion.</strong> A PDF's "page 1" in the toolbar might be page 3 of the actual document if there's a two-page cover. The splitter uses the toolbar numbering (the PDF's internal page order). If you're specifying a range based on printed page numbers, flip through the PDF first and note the offset. I've learned this the hard way — extracting "pages 10–15" of a report and getting the table of contents instead of the financial tables I needed.</p>
+
+<h2>What About Paid Desktop Splitters?</h2>
+
+<p>Adobe Acrobat Pro ($19.99/month), PDF Expert ($79.99/year), and Foxit PDF Editor ($10.99/month) all split PDFs perfectly. They also do a hundred other things. If PDF splitting is something you do daily — splitting hundreds of pages, automating splitting by bookmark, integrating splitting into a document processing pipeline — the desktop software pays for itself in automation. For the other 99% of us who split a PDF once a month? A free browser-based splitter covers every real need.</p>
+
+<h2>Security Note That Actually Matters</h2>
+
+<p>PDFs carry sensitive data — tax returns, medical records, signed contracts, bank statements. Uploading them to a random server for splitting is a bad idea regardless of what the privacy policy says. The safe approach is a splitter that processes the file client-side: your browser loads the PDF into memory, slices it into pages using JavaScript/WebAssembly, and triggers a download. The original file never leaves your device.</p>
+
+<p>You can verify this yourself: open DevTools (F12) → Network tab → split a PDF. If you see any outbound file transfer (a POST request with a multi-megabyte payload), the tool is uploading your document. Close the tab and find one that runs locally. <a href="https://myguides18.github.io/ToolBoxify/">ToolBoxify's entire PDF suite</a> passes this test — I've checked it across Chrome, Firefox, and Safari.</p>
 
 <h3>Related Articles</h3>
     <div class="related-list">
@@ -88,10 +85,10 @@
     </div>
 
 <div class="cta">
-  Split your first PDF in seconds. <a href="https://myguides18.github.io/ToolBoxify/">Try it free at ToolBoxify →</a>
+  Split your first PDF in seconds. <a href="https://myguides18.github.io/ToolBoxify/">Try it free at ToolBoxify &rarr;</a>
 </div>
 
-<footer>© 2026 ToolBoxify</footer>
+<footer>&copy; 2026 ToolBoxify</footer>
 </div>
 </body>
 </html>
